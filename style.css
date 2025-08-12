@@ -1,0 +1,75 @@
+/* Variables */
+:root {
+    --navbar-color: #00aaff;
+    --hover-color: #0077aa;
+    --circle-color: red;
+    --font: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--navbar-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: var(--hover-color);
+    padding: 5px;
+}
+
+/* Centered main content */
+main {
+    text-align: center;
+    padding: 30px;
+    font-family: var(--font);
+}
+
+/* Circle animation */
+.circle {
+    width: 100px;
+    height: 100px;
+    background: var(--circle-color);
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: bounce 1s infinite alternate;
+    position: relative;
+}
+
+/* Animations */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(40px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background: var(--navbar-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--hover-color);
+}
+
+

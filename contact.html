@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required><br><br>
+            <input type="email" id="email" placeholder="Email" required><br><br>
+            <textarea id="message" placeholder="Message" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="thankYou" style="display:none;">✅ Thank you! Your message has been sent.</p>
+
+        <button onclick="changeBackground()">Change Background</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
